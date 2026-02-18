@@ -6,12 +6,12 @@ services:
     container_name: bruin-nyc
     working_dir: /app
     volumes:
-      - ./:/app
-      - duckdb_data:/app
+      - .:/app
+      - duckdb_data:/data   # <- different path
     tty: true
     entrypoint: >
       bash -c "
-        pip install --no-cache-dir bruin pandas requests pyarrow python-dateutil &&
+        pip install --no-cache-dir pandas requests pyarrow python-dateutil &&
         tail -f /dev/null
       "
 

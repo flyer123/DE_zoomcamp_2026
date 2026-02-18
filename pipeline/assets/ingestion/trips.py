@@ -7,6 +7,8 @@ materialization:
   type: table
   strategy: append
 
+connection: duckdb-default
+
 columns:
   - name: pickup_datetime
     type: timestamp

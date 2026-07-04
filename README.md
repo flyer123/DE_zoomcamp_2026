@@ -115,12 +115,12 @@ docker compose up --build
 |---|---|
 | Week 0 | ✅ |
 | Week 1 | ✅ |
-| Week 2 | 🚧 |
-| Week 3 | 🚧 |
-| Week 5 | 🚧 |
-| Week 6 | 🚧 |
-| Week 7 | 🚧 |
-| Workshops | 🚧 |
+| Week 2 | ✅ |
+| Week 3 | ✅ |
+| Week 5 | ✅ |
+| Week 6 | ✅ |
+| Week 7 | ✅ |
+| Workshops | ✅ |
 
 ---
 

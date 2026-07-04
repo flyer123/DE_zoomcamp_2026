@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  bruin:
+    build: .
+    container_name: bruin-nyc
+    working_dir: /app
+    volumes:
+      - .:/app
+      - duckdb_data:/data   # <- different path
+    tty: true
+    entrypoint: >
+      bash -c "
+        pip install --no-cache-dir pandas requests pyarrow python-dateutil &&
+        tail -f /dev/null
+      "
+
+volumes:
+  duckdb_data:
